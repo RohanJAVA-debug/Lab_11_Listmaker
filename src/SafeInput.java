@@ -56,7 +56,7 @@ public class SafeInput
         do
         {
             System.out.print(prompt + " [Y/N]: ");
-            input = pipe.nextLine().toUpperCase();
+            input = pipe.nextLine().trim().toUpperCase();
 
             if(input.equals("Y"))
             {
